@@ -38,13 +38,12 @@ return array(
 		'urlManager'=>array(
 			'urlFormat'=>'path',
 
-			/*
 			'rules'=>array(
 				'<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				'<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
 				'<controller:\w+>/<action:\w+>'=>'<controller>/<action>',
-			*/
 
+			/*
 			'rules'=>array(
 				// '<controller:\w+>/<id:\d+>'=>'<controller>/view',
 				// '<controller:\w+>/<action:\w+>/<id:\d+>'=>'<controller>/<action>',
@@ -54,7 +53,9 @@ return array(
 				// 'page/<alias>' => 'website/page',
 				'<alias:about>' => 'website/page',
 				'page/about/<alias:authors>' => 'website/page',
-				'page/<alias>' => 'website/page',				
+				'page/<alias>' => 'website/page',
+			*/
+		
 			),
 			'showScriptName'=>false,
 		),
@@ -65,7 +66,7 @@ return array(
 		*/
 		// uncomment the following to use a MySQL database		
 		'db'=>array(
-			'connectionString' => 'mysql:host=localhost;dbname=demo',
+			'connectionString' => 'mysql:host=localhost;dbname=yii_cms',
 			'emulatePrepare' => true,
 			'username' => 'gavin',
 			'password' => 'passw0rd',
@@ -83,11 +84,9 @@ return array(
 					'levels'=>'error, warning',
 				),
 				// uncomment the following to show log messages on web pages
-				/*
 				array(
 					'class'=>'CWebLogRoute',
 				),
-				*/
 			),
 		),
 	),
@@ -98,4 +97,6 @@ return array(
 		// this is used in contact page
 		'adminEmail'=>'webmaster@example.com',
 	),
+
+	
 );
