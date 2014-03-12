@@ -54,6 +54,10 @@ class SiteController extends Controller
 		$model=new ContactForm;
 		if(isset($_POST['ContactForm']))
 		{
+
+
+
+
 			$model->attributes=$_POST['ContactForm'];
 			if($model->validate())
 			{

@@ -19,6 +19,18 @@ class WebsiteController extends Controller
 		echo $this->createAbsoluteUrl('website/page',
 		array('alias' => 'test'));
 	}
+
+	public function actionCreate() 
+	{	 
+	    $model=new Employee;
+	 
+	    /* Code for validation and redirect upon save. */
+	 
+	    // If not saved, render the create View:
+	    $this->render('create',array(
+	        'model'=>$model, // Model is passed to create.php View!
+	    ));
+	}	
 	
 	// Uncomment the following methods and override them if needed
 	/*
